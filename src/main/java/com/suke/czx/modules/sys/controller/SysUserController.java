@@ -98,7 +98,7 @@ public class SysUserController extends AbstractController {
 		//获取用户所属的角色列表
 		List<Long> roleIdList = sysUserRoleService.queryRoleIdList(userId);
 		user.setRoleIdList(roleIdList);
-		
+
 		return R.ok().put("user", user);
 	}
 	
